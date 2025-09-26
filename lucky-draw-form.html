@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>  Ray: Limited Edition 'Apex' Tracksuit Drop</h1>
+        <small> <em>Enter the draw for a chance to purchase this exclusive tracksuit.</em></small>
+
+    </header>
+
+    <main>
+
+        <br>
+        <hr>
+        <br>
+        <form  action="submit_entry.php " method="post">
+        
+
+        <fieldset>
+            <legend>1. Your Account</legend>
+            <br>
+            <label for="email">Email:</label><br>
+            <input id="email" type="email" name="email" required><br><br>
+            <label for="username">Username:</label><br>
+            <input id="username" type="text" name="username" required maxlength="15" minlength="4"><br><br>
+            <label for="password"> Create Password:</label><br>
+            <input id="password" type="password" name="password" required pattern="^(?=.*[a-z)(?=.*[A-Z])(?=.*[0-9],){8,}$" title="Must have 8+ characters, 1 number, 1 uppercase letter"><br>
+            <ul>
+                <li><small><tt>8+ characters</tt></small></li>
+                <li><small><tt>1 number</tt></small></li>
+                <li><small><tt>1 uppercase letter</tt></small></li>
+            </ul>
+        </fieldset>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>2. Shipping & Contact</legend>
+            <br>
+            <label for="fullname">Full Name:</label><br>
+            <input id="fullname" type="text" name="fullname" required minlength="2" maxlength="100"><br><br>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>--Please select a country--</option> 
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="AU">Australia</option>
+                <option value="IN">India</option>
+                <option value="JP">Japan</option>
+            </select><br><br>
+            <label for="address1">Street Address:</label><br>
+            <input id="address1" type="text" name="address1" required maxlength="200"><br><br>
+            <label for="address2">Apartment, house , etc. (Optional):</label><br>
+            <input id="address2" type="text" name="address2" maxlength="200"><br><br>
+            <label for="city">City:</label><br>
+            <input id="city" type="text" name="city" required maxlength="100"><br><br>
+            <label for="state">State:</label><br>
+            <input id="state" type="text" name="state" required maxlength="100"><br><br>
+            <label for="postalcode">Postal / ZIP Code:</label><br>
+            <input id="postalcode" type="number" name="postalcode" required ><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input id="phone" type="tel" name="phone" placeholder="Include country code" required><br><br>
+        </fieldset>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>3. Your Order</legend>
+            <br>
+            <label for="size">Select Tracksuit Size:</label><br>
+            <select id="size" name="size" required>
+                <option value="" disabled selected>--Please choose a size--</option> 
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">X-Large</option>
+                
+            </select>
+            <br>
+            <br>
+
+            <p>Choose 'Apex' Colorway:</p>
+            <input type="radio" name="colorway" id="blush-pink" value="blush-pink" required>
+            <label for="blush-pink">Blush Pink</label>
+            <input type="radio" name="colorway" id="midnight-black" value="midnight-black">
+            <label for="midnight-black">Midnight Black</label>
+            <input type="radio" name="colorway" id="sky-blue" value="sky-blue">
+            <label for="sky-blue">Sky Blue</label>
+            <br>
+            <br>
+
+            <p>Optional 'Ray' Accessories:</p>
+            <input type="checkbox" name="addons" id="hat" value="hat">
+            <label for="hat">Ray Logo Cap </label>
+            <input type="checkbox" name="addons" id="socks" value="socks">
+            <label for="socks">Ray Performance Socks</label>
+            <br>
+            <br>
+        </fieldset>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>4. Finalize Entry</legend>
+            <br>
+            <label for="edge">The Apex Edge:</label><br>
+            <input id="edge" type="range" max="50" min="1" value="5"><br>
+            <small><sub>Slide right to boost your odds of winning the tracksuit.</sub></small>
+            <br>
+            <br>
+            <br>
+            <label for="delivery-time">Schedule Your Premium Delivery (if you win):</label><br><br>
+            <input id="delivery-time" type="datetime-local" name="delivery-time" required><br><br>
+            <br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <small><label for="terms">I agree to the <a href="">Ray Tracksuit Drop Terms</a></label></small>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        
+        <button type="submit">Enter Draw</button>
+        <button type="reset">Clear Form</button>
+        <br>
+        <br>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <hr>
+        <strong>Ray</strong><br>
+        <small> 
+            &copy; 2025 All rights reserved by Ray.<br>
+            All trademarks and products are property of their respective owners.
+        </small>
+             
+    </footer>
+</body>
+</html>

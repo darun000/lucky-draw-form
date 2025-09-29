@@ -28,7 +28,7 @@
             <label for="username">Username:</label><br>
             <input id="username" type="text" name="username" required maxlength="15" minlength="4"><br><br>
             <label for="password"> Create Password:</label><br>
-            <input id="password" type="password" name="password" required pattern="^(?=.*[a-z)(?=.*[A-Z])(?=.*[0-9],){8,}$" title="Must have 8+ characters, 1 number, 1 uppercase letter"><br>
+            <input id="password" type="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$" title="Must have 8+ characters, 1 number, 1 uppercase letter"><br>
             <ul>
                 <li><small><tt>8+ characters</tt></small></li>
                 <li><small><tt>1 number</tt></small></li>
@@ -142,4 +142,5 @@
              
     </footer>
 </body>
+
 </html>

@@ -13,4 +13,5 @@ This is a complete HTML form built for a **Lucky Draw entry** to win the Ray: Ap
   text, email, password, tel, textarea, select, radio, checkbox, range, datetime-local.  
 
 ## Demo
-(Open with a browser or host with GitHub Pages)
+Live site: https://darun000.github.io/lucky-draw-form/
+
